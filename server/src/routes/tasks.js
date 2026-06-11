@@ -4,7 +4,7 @@ const {
   createTask, getProjectTasks, getTask,
   updateTask, deleteTask, addComment, deleteComment,
 } = require('../controllers/taskController');
-const { protect } = require('../middleware/auth');
+const { protect } = require('../middleware/Auth');
 const { isMember } = require('../middleware/projectAccess');
 
 
