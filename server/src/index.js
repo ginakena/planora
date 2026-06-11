@@ -51,8 +51,8 @@ app.use(express.json());
 
 
 mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log('✅ MongoDB connected'))
+  .connect(process.env.MONGODB_URI)
+  .then(() => console.log(' MongoDB connected'))
   .catch((err) => { console.error('❌ MongoDB error:', err.message); process.exit(1); });
 
 
@@ -72,4 +72,4 @@ app.use((req, res) => {
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5001;
-server.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
