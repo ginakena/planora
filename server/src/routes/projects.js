@@ -4,10 +4,10 @@ const {
   createProject, getMyProjects, getProject,
   updateProject, deleteProject, addMember, removeMember,
 } = require('../controllers/projectController');
-const { protect } = require('../middleware/auth');
+const { protect } = require('../middleware/Auth');
 const { isMember, isOwner } = require('../middleware/projectAccess');
 
-// GET  /api/projects         — all projects user belongs to
+// GET  /api/projects        
 router.get('/', protect, getMyProjects);
 
 // POST /api/projects         — create a project
