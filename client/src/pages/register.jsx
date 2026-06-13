@@ -4,7 +4,7 @@ import {
   Box, Card, CardContent, TextField, Button, Typography,
   Link, Alert, CircularProgress,
 } from '@mui/material';
-import api from '../api/api';
+import api from '../Api/api';
 import { useAuth } from '../context/authContext';
 
 const Register = () => {
