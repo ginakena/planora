@@ -10,7 +10,7 @@ import AddIcon from '@mui/icons-material/Add';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import SettingsIcon from '@mui/icons-material/Settings';
-import api from '../api';
+import api from '../Api/api';
 import { useAuth } from '../context/authContext';
 import { useSocket } from '../context/socketContext';
 import TaskCard from '../components/taskCard';
