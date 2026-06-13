@@ -10,7 +10,7 @@ import { useAuth } from '../context/authContext';
 const Register = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
-  const [form, setForm] = useState({ username: '', email: '', password: '' });
+  const [form, setForm] = useState({ username: '', email: '', password: '', confirmPassword: '' });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -45,6 +45,8 @@ const Register = () => {
               onChange={(e) => setForm({ ...form, email: e.target.value })} required fullWidth size="small" />
             <TextField label="Password" name="password" type="password" value={form.password}
               onChange={(e) => setForm({ ...form, password: e.target.value })} required fullWidth size="small" />
+            <TextField label="Confirm Password" name="confirmPassword" type="password" value={form.confirmPassword}
+              onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })} required fullWidth size="small" />
             <Button type="submit" variant="contained" fullWidth disabled={loading}
               sx={{ borderRadius: 3, textTransform: 'none', py: 1.2, fontWeight: 600 }}>
               {loading ? <CircularProgress size={22} color="inherit" /> : 'Create Account'}
