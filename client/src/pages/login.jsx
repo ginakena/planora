@@ -34,7 +34,7 @@ const Login = () => {
       <Card elevation={2} sx={{ width: '100%', maxWidth: 400, borderRadius: 4 }}>
         <CardContent sx={{ p: 4 }}>
           <Box sx={{ textAlign: 'center', mb: 3 }}>
-            <Typography variant="h5" fontWeight={800} color="primary">TaskFlow</Typography>
+            <Typography variant="h5" fontWeight={800} color="primary">Planora</Typography>
             <Typography variant="body2" color="text.secondary" mt={0.5}>Sign in to your workspace</Typography>
           </Box>
           {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}

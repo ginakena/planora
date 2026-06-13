@@ -11,12 +11,15 @@ import ProjectBoard from './pages/projects';
 
 const theme = createTheme({
   palette: {
-    primary: { main: '#1976d2' },
+    primary: { main: '#2B5748' },
     background: { default: '#f5f6fa' },
   },
   typography: {
-    fontFamily: '"Inter", "Roboto", sans-serif',
-  },
+  fontFamily: '"Akt", sans-serif',
+  h1: { fontWeight: 700 },
+  h2: { fontWeight: 600 },
+  body1: { fontWeight: 400 },
+},
 });
 
 const Layout = ({ children }) => (
