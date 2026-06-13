@@ -7,7 +7,7 @@ import {
   IconButton, Tooltip, Avatar,
 } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import DeleteIcon from "@mui/icons-material/Delete";
 import GroupIcon from '@mui/icons-material/Group';
 import api from '../Api/api';
 import { useAuth } from '../context/authContext';
