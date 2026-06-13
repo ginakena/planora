@@ -5,6 +5,8 @@ import {
   Link, Alert, CircularProgress,
 } from '@mui/material';
 import api from '../Api/api';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { useAuth } from '../context/authContext';
 
 const Register = () => {
@@ -44,9 +46,27 @@ const Register = () => {
             <TextField label="Email" name="email" type="email" value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })} required fullWidth size="small" />
             <TextField label="Password" name="password" type="password" value={form.password}
-              onChange={(e) => setForm({ ...form, password: e.target.value })} required fullWidth size="small" />
+              onChange={(e) => setForm({ ...form, password: e.target.value })} required fullWidth size="small" InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton onClick={() => setShowPassword((p) => !p)} edge="end" size="small">
+                      {showPassword ? <VisibilityOffIcon fontSize="small" /> : <VisibilityIcon fontSize="small" />}
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }}
+ />
             <TextField label="Confirm Password" name="confirmPassword" type="password" value={form.confirmPassword}
-              onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })} required fullWidth size="small" />
+              onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })} required fullWidth size="small"
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton onClick={() => setShowPassword((p) => !p)} edge="end" size="small">
+                      {showPassword ? <VisibilityOffIcon fontSize="small" /> : <VisibilityIcon fontSize="small" />}
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }} />
             <Button type="submit" variant="contained" fullWidth disabled={loading}
               sx={{ borderRadius: 3, textTransform: 'none', py: 1.2, fontWeight: 600 }}>
               {loading ? <CircularProgress size={22} color="inherit" /> : 'Create Account'}
