@@ -5,7 +5,7 @@ import {
   FormControl, InputLabel, CircularProgress, Tooltip,
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import DeleteIcon from "@mui/icons-material/Delete";
 import FlagIcon from '@mui/icons-material/Flag';
 import { format } from 'date-fns';
 import api from '../Api/api';
