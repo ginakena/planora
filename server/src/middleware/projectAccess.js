@@ -3,7 +3,8 @@ const Project = require('../models/project');
 // Attach project to req.project and verify membership
 const isMember = async (req, res, next) => {
   try {
-    const projectId = req.params.projectId || req.body.projectId || req.params.id;
+    
+    const projectId = req.params.id || req.params.projectId || req.body.projectId;
     const project = await Project.findById(projectId)
       .populate('owner', 'username avatar email')
       .populate('members.user', 'username avatar email');
