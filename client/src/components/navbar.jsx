@@ -31,7 +31,7 @@ const Navbar = () => {
           to="/dashboard"
           sx={{ fontWeight: 800, textDecoration: 'none', color: 'primary.main', mr: 2 }}
         >
-          TaskFlow
+          Planora
         </Typography>
 
         <Tooltip title="Dashboard">
