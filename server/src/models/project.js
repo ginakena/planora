@@ -27,7 +27,7 @@ const ProjectSchema = new mongoose.Schema(
     ],
     color: {
       type: String,
-      default: '#1976d2', // project accent color for UI
+      default: '#9CB080', // project accent color for UI
     },
   },
   { timestamps: true }
