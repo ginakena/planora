@@ -120,7 +120,7 @@ const Dashboard = () => {
                         sx={{ position: 'absolute', top: 8, right: 8, color: 'text.secondary',
                           '&:hover': { color: 'error.main' } }}
                       >
-                        <DeleteOutlineIcon fontSize="small" />
+                        <DeleteIcon fontSize="small" />
                       </IconButton>
                     </Tooltip>
                   )}
