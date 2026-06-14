@@ -358,7 +358,7 @@ const ProjectBoard = () => {
             value={memberEmail}
             onChange={(e) => setMemberEmail(e.target.value)}
             fullWidth size="small" autoFocus
-            helperText="They must already have a TaskFlow account"
+            helperText="They must already have a Planora account"
           />
           <Divider sx={{ my: 2 }} />
           <Typography variant="caption" color="text.secondary" display="block" mb={1}>
